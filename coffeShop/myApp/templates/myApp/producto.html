@@ -6,13 +6,13 @@
 <body>
     <h1>Productos Disponibles</h1>
     <ul>
-        {% for  producto in Productos  %}
+        {% for producto in list_productos %}
 
         <li>
-            {{producto.nombre}} - {{producto.precio}}
+            {{producto.nombre}} | <span>Precio:</span> {{producto.precio}}
         </li>
 
         {% endfor %}
-
+    </ul>
 </body>
 </html>
